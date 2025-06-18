@@ -1,12 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="ka">
 <head>
-    <title>Dachi ylea</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slay_salomika!</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1 style="font-size: 60px; text-align: center;">!!!</h1>
-<a href="images/dra.mp4">
-    <img src="images/dra.jpg" style="display: block; margin-left: auto; margin-right: auto;">
-</a>
+<body class="flex flex-col items-center justify-center min-h-screen py-8 px-4 text-white">
+
+    <div class="container bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg p-8 md:p-12 rounded-2xl shadow-xl max-w-4xl w-full text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-shadow-lg leading-tight">გილოცავ დაბადების დღეს, <span class="text-yellow-300">სალომე</span>!</h1>
+        <p id="message" class="text-lg md:text-xl mb-8 leading-relaxed">Hold on to the memories, they’ll hold onto you</p>
+
+        <button id="surpriseButton" class="bg-yellow-400 hover:bg-yellow-500 text-purple-800 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-yellow-300 mb-8">
+            სიურპრიზი!
+        </button>
+
+        <div id="surpriseContent" class="hidden mt-8">
+            <p class="text-xl mb-4">საჩუქარი 🎁</p>
+            <video controls class="rounded-xl shadow-lg mx-auto w-full md:w-3/4 lg:w-2/3">
+                <source src="surprise_video.mp4" type="video/mp4">
+                თქვენი ბრაუზერი არ უჭერს მხარს ვიდეოს დაკვრას.
+            </video>
+        </div>
+    </div>
+
+    <div class="photo-gallery container bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg p-8 md:p-12 rounded-2xl shadow-xl max-w-4xl w-full text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-8 text-shadow-md">მოგონებანი</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- ფოტოების ბლოკები -->
+            <div class="relative group cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:scale-105" data-fact="“When everyone you thought you knew deserts your fight, I'll go with you...” - TOP, My Blood 🥀">
+                <img src="md and salome.jpg" alt="გიალოს ნინიკო და სალომე" class="w-full h-48 object-cover rounded-md">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                    <p class="text-white text-md font-semibold mb-2">Spread these legs for me</p>
+                </div>
+            </div>
+
+            <div class="relative group cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:scale-105" data-fact="“Don’t lose who you are in the blur of the stars...” - Jessi J, Who You Are 🌻💫">
+                <img src="makuna and salome.jpg" alt="მაკუნა და სალომე" class="w-full h-48 object-cover rounded-md">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                    <p class="text-white text-md font-semibold mb-2">Spread these legs for me</p>
+                </div>
+            </div>
+
+            <div class="relative group cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:scale-105" data-fact="“I'll be the light to guide you” - Bruno Mars, Count on me 💜">
+                <img src="nini and salome.jpg" alt="ნინიკო და სალომე" class="w-full h-48 object-cover rounded-md">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                    <p class="text-white text-md font-semibold mb-2">Spread these legs for me</p>
+                </div>
+            </div>
+
+            <div class="relative group cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:scale-105" data-fact="“Everything will be alright if we keep dancing like we're 19” - Taylor Swift, 22 💛🌼">
+                <img src="anano and salome.jpg" alt="ანანო და სალომე" class="w-full h-48 object-cover rounded-md">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                    <p class="text-white text-md font-semibold mb-2">Spread these legs for me</p>
+                </div>
+            </div>
+
+            <div class="relative group cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:scale-105" data-fact="“Time breaks down your mind and body, don't you let it touch your soul” - Taylor Swift, Timeless 💜">
+                <img src="barbare and salome.jpg" alt="ბარბარე და სალომე" class="w-full h-48 object-cover rounded-md">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                    <p class="text-white text-md font-semibold mb-2">Spread these legs for me</p>
+                </div>
+            </div>
+
+            <div class="relative group cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:scale-105" data-fact="“Long live all the mountains we moved...” - Taylor Swift, Long Live 💚">
+                <img src="me and salome.jpg" alt="ანა და სალომე" class="w-full h-48 object-cover rounded-md">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                    <p class="text-white text-md font-semibold mb-2">Spread these legs for me</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="factModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden z-50 p-4">
+        <div class="bg-white rounded-lg p-6 md:p-8 max-w-xl w-full shadow-2xl relative text-gray-800 modal-fade-in">
+            <button id="closeModalBtn" class="absolute top-3 right-3 text-gray-600 hover:text-gray-900 text-3xl font-bold transition duration-200">
+                &times;
+            </button>
+            <img id="modalImage" src="" alt="მოგონების ფოტო" class="tak w-full h-auto rounded-lg mb-4 shadow-md">
+            <p id="modalFact" class="text-lg md:text-xl leading-relaxed text-center font-medium"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
